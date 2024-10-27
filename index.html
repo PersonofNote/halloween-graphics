@@ -36,15 +36,6 @@
     </textPath>
   </text>
 </svg>
-<svg width="auto" height="auto" viewBox="0 -10 800 200">
-  <!-- Path for a circular arc with a radius of 2.5 inches and height of 1 inch -->
-  <path id="curve-arc" d="M100,150 A250,250 0 0,1 400,150" fill="none" />
-  <text font-size="72" width="800" stroke="black" fill="none" stroke-width="2">
-    <textPath xlink:href="#curve-arc">
-      FORTUNES
-    </textPath>
-  </text>
-</svg>
 <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
   <!-- Outer almond shape for the eye -->
   <path class="eye-shape" d="M50,150 Q150,50 250,150 Q150,250 50,150" fill="none" />
@@ -63,6 +54,68 @@
   <line class="ray" x1="150" y1="255" x2="150" y2="225" />
   <line class="ray" x1="100" y1="245" x2="115" y2="215" />
   <line class="ray" x1="200" y1="245" x2="185" y2="215" />
+</svg>
+
+<svg id="composite" width="3in" height="5in">
+  <svg id="large" viewBox="0 -50 1000 400" y="-100">
+  <path id="curve-long" d="M146.4,297.2c8-12.2,131-193.6,357.2-191.2c222.6,2.4,341.6,180.6,350.2,194" fill="none" />
+  <text id="outline" font-size="144" width="1000">
+    <textPath xlink:href="#curve-long">
+      FORTUNES
+    </textPath>
+  </text>
+</svg>
+  <svg y="150" width="300" height="175" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer almond shape for the eye -->
+  <path class="eye-shape" d="M50,150 Q150,50 250,150 Q150,250 50,150" fill="none" />
+
+  <!-- Inner circle for the iris -->
+  <circle class="iris" cx="150" cy="150" r="40" fill="none" />
+
+  <!-- Pupil in the center -->
+  <circle class="pupil" cx="150" cy="150" r="15" fill="none" />
+
+  <!-- Rays above and below the eye -->
+  <line class="ray" x1="150" y1="45" x2="150" y2="75" />
+  <line class="ray" x1="100" y1="55" x2="115" y2="85" />
+  <line class="ray" x1="200" y1="55" x2="185" y2="85" />
+
+  <line class="ray" x1="150" y1="255" x2="150" y2="225" />
+  <line class="ray" x1="100" y1="245" x2="115" y2="215" />
+  <line class="ray" x1="200" y1="245" x2="185" y2="215" />
+</svg>
+</svg>
+<svg id="composite-1" width="3in" height="3in">
+  <!-- Text SVG positioned at the top -->
+  <svg id="large" viewBox="0 -50 1000 200" x="0" y="0">
+    <path id="curve-long" d="M146.4,297.2c8-12.2,131-193.6,357.2-191.2c222.6,2.4,341.6,180.6,350.2,194" fill="none" />
+    <text id="outline" font-size="144" width="1000">
+      <textPath xlink:href="#curve-long">
+        FORTUNES
+      </textPath>
+    </text>
+  </svg>
+
+  <!-- Eye SVG positioned below the text -->
+  <svg width="250" height="250" viewBox="0 0 300 300" x="25" y="300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Outer almond shape for the eye -->
+    <path class="eye-shape" d="M50,150 Q150,50 250,150 Q150,250 50,150" fill="none" />
+
+    <!-- Inner circle for the iris -->
+    <circle class="iris" cx="150" cy="150" r="40" fill="none" />
+
+    <!-- Pupil in the center -->
+    <circle class="pupil" cx="150" cy="150" r="15" fill="none" />
+
+    <!-- Rays above and below the eye -->
+    <line class="ray" x1="150" y1="45" x2="150" y2="75" />
+    <line class="ray" x1="100" y1="55" x2="115" y2="85" />
+    <line class="ray" x1="200" y1="55" x2="185" y2="85" />
+
+    <line class="ray" x1="150" y1="255" x2="150" y2="225" />
+    <line class="ray" x1="100" y1="245" x2="115" y2="215" />
+    <line class="ray" x1="200" y1="245" x2="185" y2="215" />
+  </svg>
 </svg>
   <script src="main.js"></script>
 </body>
